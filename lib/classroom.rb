@@ -15,8 +15,16 @@ class Classroom
     @capacity
   end
 
-  def students
-    []
+  # def students
+  #   []
+  # end
+
+  def add_student(student)
+    @students << student
+  end
+
+  def yell_at_students
+    @students.map(&:upcase)
   end
 
 end
